@@ -1,12 +1,20 @@
 # TODO: Implement the following functions based on the descriptions.
 
 def reverse_list(lst):
+    
     """
     Reverses the given list.
     :param lst: List of integers.
     :return: A list with elements in reverse order.
     """
     pass  # Implement this
+    new_list = lst[::-1]
+    return new_list
+print(reverse_list([1, 2, 3]))
+
+        
+    
+
 
 def count_occurrences(lst, element):
     """
@@ -16,6 +24,14 @@ def count_occurrences(lst, element):
     :return: Integer count of occurrences.
     """
     pass  # Implement this
+    element_count = 0
+    for element in lst:
+        if lst[element] == lst[element] :
+            element_count +=1
+            print(element_count)
+        else:
+            return "There are no repeating elements"
+print(count_occurrences([1, 2, 2, 3],2))
 
 def get_keys_with_value(dct, value):
     """
@@ -43,6 +59,7 @@ def find_second_largest(numbers):
     """
     pass  # Implement this
 
+
 def is_anagram(str1, str2):
     """
     Checks if two strings are anagrams.
@@ -56,6 +73,8 @@ def is_anagram(str1, str2):
     :return: True if the strings are anagrams, False otherwise.
     """
     pass  # Implement this
+    # for words in str1:
+    #     if str1[1::] ==
 
 
 def flatten_list(nested_list):
@@ -74,6 +93,16 @@ def remove_duplicates(lst):
     :return: List without duplicates.
     """
     pass  # Implement this
+   
+    new_list = []
+    for element in lst:
+        if lst[element] != lst[element]:
+            new_list = new_list.append(lst(element))
+            return new_list
+        else:
+            return lst
+
+print(remove_duplicates([1,2,2,3]))
 
 def find_common_elements(lst1, lst2):
     """
