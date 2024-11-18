@@ -63,6 +63,7 @@ def find_second_largest(numbers):
     pass  # Implement this
 
 
+
 def is_anagram(str1, str2):
     """
     Checks if two strings are anagrams.
@@ -115,3 +116,9 @@ def find_common_elements(lst1, lst2):
     :return: List of common elements.
     """
     pass  # Implement this
+    new_list = []
+    for i in lst1:
+        for x in lst2:
+            if i == x:
+                return i
+print(find_common_elements([1, 2, 3],[3, 4, 5]))
