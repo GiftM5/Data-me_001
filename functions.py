@@ -28,7 +28,7 @@ def count_occurrences(lst, element):
     for element in lst:
         if lst[element] == lst[element] :
             element_count +=1
-            print(element_count)
+            return element_count
         else:
             return "There are no repeating elements"
 print(count_occurrences([1, 2, 2, 3],2))
@@ -50,6 +50,9 @@ def merge_sorted_lists(lst1, lst2):
     :return: Merged sorted list.
     """
     pass  # Implement this
+    Total_lists = lst1 + lst2
+    return sorted(Total_lists)
+print(merge_sorted_lists([1, 3, 5],[2, 4, 6]))
 
 def find_second_largest(numbers):
     """
